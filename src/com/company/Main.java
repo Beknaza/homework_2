@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Random;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -8,6 +10,8 @@ public class Main {
         System.out.println(ageTemperature(10, 15));
         System.out.println(ageTemperature(15,30));
         System.out.println(ageTemperature(30, 25));
+
+        System.out.println(ageTemperature(generateRandomAge(),17));
     }
 
     public static String ageTemperature(int age, int temperature) {
@@ -24,5 +28,9 @@ public class Main {
         }
         return convert_3;
     }
-
+public static int generateRandomAge (){
+    Random random = new Random();
+    int age = random.nextInt(50);
+    return age;
+}
 }
