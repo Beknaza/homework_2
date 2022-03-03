@@ -4,7 +4,10 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println(ageTemperature(100,100));
-
+        System.out.println(ageTemperature(25, 60));
+        System.out.println(ageTemperature(10, 15));
+        System.out.println(ageTemperature(15,30));
+        System.out.println(ageTemperature(30, 25));
     }
 
     public static String ageTemperature(int age, int temperature) {
